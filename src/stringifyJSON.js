@@ -29,6 +29,7 @@ var stringifyJSON = function(obj) {
         contents+=item+",";
       }
     }
+    //to remove extra comma at end
     var edited = contents.substr(0, contents.length-1);
     result = "{"+edited+"}";
   }
