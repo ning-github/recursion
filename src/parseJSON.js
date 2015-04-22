@@ -31,6 +31,7 @@ var parseJSON = function(json) {
 
     if (currentChar === "-") {
       numString+="-";
+      next();
     } 
 
     while (/[0-9]/.test(currentChar)){
@@ -264,31 +265,3 @@ var parseJSON = function(json) {
 
   return answer;
 };
-
-// var last = '{\r\n' +
-//     '          "glossary": {\n' +
-//     '              "title": "example glossary",\n\r' +
-//     '      \t\t"GlossDiv": {\r\n' +
-//     '                  "title": "S",\r\n' +
-//     '      \t\t\t"GlossList": {\r\n' +
-//     '                      "GlossEntry": {\r\n' +
-//     '                          "ID": "SGML",\r\n' +
-//     '      \t\t\t\t\t"SortAs": "SGML",\r\n' +
-//     '      \t\t\t\t\t"GlossTerm": "Standard Generalized ' +
-//     'Markup Language",\r\n' +
-//     '      \t\t\t\t\t"Acronym": "SGML",\r\n' +
-//     '      \t\t\t\t\t"Abbrev": "ISO 8879:1986",\r\n' +
-//     '      \t\t\t\t\t"GlossDef": {\r\n' +
-//     '                              "para": "A meta-markup language,' +
-//     ' used to create markup languages such as DocBook.",\r\n' +
-//     '      \t\t\t\t\t\t"GlossSeeAlso": ["GML", "XML"]\r\n' +
-//     '                          },\r\n' +
-//     '      \t\t\t\t\t"GlossSee": "markup"\r\n' +
-//     '                      }\r\n' +
-//     '                  }\r\n' +
-//     '              }\r\n' +
-//     '          }\r\n' +
-//     '      }\r\n';
-
-// console.log(parseJSON(last));
-

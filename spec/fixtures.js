@@ -45,7 +45,7 @@ parseableStrings = [
   '{"a": "b", "c": "d"}',
   '[null,false,true]',
   '{"foo": true, "bar": false, "baz": null}',
-  //'[1, 0, -1, -0.3, 0.3, 1343.32, 3345, 0.00011999999999999999]',
+  '[1, 0, -1, -0.3, 0.3, 1343.32, 3345, 0.00011999999999999999]',
   '{"boolean, true": true, "boolean, false": false, "null": null }',
 
   // basic nesting
